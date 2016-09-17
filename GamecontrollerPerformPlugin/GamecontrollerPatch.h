@@ -10,7 +10,7 @@
 
 @interface GamecontrollerPatch : PMRPatch
 
-@property (nonatomic, readonly) PMRPrimitiveInputPort *onOffInput;
-@property (nonatomic, readonly) PMRPrimitiveOutputPort *colorOutput;
+@property (nonatomic, readonly) PMRPrimitiveInputPort *refreshInput;
+@property (nonatomic, readonly) PMRPrimitiveOutputPort *dataForm;
 
 @end

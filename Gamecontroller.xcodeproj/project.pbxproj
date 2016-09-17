@@ -59,6 +59,10 @@
 		A07FEEAC1D8DE4E600309652 /* Performer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A07FEEAB1D8DE4E600309652 /* Performer.framework */; };
 		A07FEEAE1D8DE4E600309652 /* RelativeInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A07FEEAD1D8DE4E600309652 /* RelativeInterface.framework */; };
 		A07FEEB11D8DE4E600309652 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A07FEEAF1D8DE4E600309652 /* LaunchScreen.xib */; };
+		A07FEEC11D8DE53700309652 /* GamecontrollerPerformPlugin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A07FEE5E1D8DE4E600309652 /* GamecontrollerPerformPlugin.framework */; };
+		A07FEEC21D8DE5E200309652 /* Performer.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = A07FEEAB1D8DE4E600309652 /* Performer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A07FEEC31D8DE5E200309652 /* RelativeInterface.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = A07FEEAD1D8DE4E600309652 /* RelativeInterface.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A07FEEC41D8DE5E200309652 /* GamecontrollerPerformPlugin.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = A07FEE5E1D8DE4E600309652 /* GamecontrollerPerformPlugin.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -68,6 +72,9 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				A07FEEC21D8DE5E200309652 /* Performer.framework in CopyFiles */,
+				A07FEEC31D8DE5E200309652 /* RelativeInterface.framework in CopyFiles */,
+				A07FEEC41D8DE5E200309652 /* GamecontrollerPerformPlugin.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -122,6 +129,7 @@
 		A07FEEAD1D8DE4E600309652 /* RelativeInterface.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RelativeInterface.framework; path = ../Frameworks/RelativeInterface.framework; sourceTree = "<group>"; };
 		A07FEEB01D8DE4E600309652 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		A07FEEB21D8DE4E600309652 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A07FEEC61D8DE63400309652 /* GameController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameController.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/GameController.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +155,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A07FEEC11D8DE53700309652 /* GamecontrollerPerformPlugin.framework in Frameworks */,
 				A07FEEAE1D8DE4E600309652 /* RelativeInterface.framework in Frameworks */,
 				A07FEEAC1D8DE4E600309652 /* Performer.framework in Frameworks */,
 			);
@@ -162,6 +171,7 @@
 				A07FEE5F1D8DE4E600309652 /* GamecontrollerPerformPlugin */,
 				A07FEE731D8DE4E600309652 /* GamecontrollerViewer */,
 				A07FEE481D8DE4E400309652 /* Products */,
+				A07FEEC51D8DE63400309652 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -293,6 +303,14 @@
 			children = (
 				A07FEEAB1D8DE4E600309652 /* Performer.framework */,
 				A07FEEAD1D8DE4E600309652 /* RelativeInterface.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A07FEEC51D8DE63400309652 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A07FEEC61D8DE63400309652 /* GameController.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
