@@ -16,7 +16,7 @@
 
 
 
-
+/*
 - (void)viewDidLoad {
   //  [super viewDidLoad];
     
@@ -39,7 +39,7 @@
     _dataForm.stringValue = status;
     
    // self.mainController = controller;
-    
+    _dataForm.stringValue = @"connected";
     [self reactToInput];
     
 }
@@ -57,26 +57,25 @@
 
 - (void)reactToInput {
     
-    _dataForm.stringValue = @"hello";
+    
     }
-
+*/
 
 - (void)processPatchWithContext:(PMRProcessContext *)context {
     
-    
-    
+    NSLog(@"connected");
+    _dataForm.stringValue = @"hello";
 
     GCController *mainController;
     // register block for input change detection
      GCExtendedGamepad *profile = mainController.extendedGamepad;
 
-    //GCExtendedGamepad *profile;
 
     profile.valueChangedHandler = ^(GCExtendedGamepad *gamepad, GCControllerElement *element)
     {
         NSString *message = @"hello";
         
-        CGPoint position = CGPointMake(0, 0);
+       // CGPoint position = CGPointMake(0, 0);
         
         // left trigger
         if (gamepad.leftTrigger == element && gamepad.leftTrigger.isPressed) {

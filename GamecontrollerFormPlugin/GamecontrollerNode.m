@@ -21,11 +21,11 @@
 - (instancetype)init {
     if ((self = [super init]) != nil) {
         // Inputs
-        [self addPort:[[FMRPrimitiveInputPort alloc] initWithName:@"Refresh" uniqueKey:@"Form.refreshInput" defaultValue:[PMRPrimitive primitiveWithBooleanValue:NO]] portGroup:nil];
+    //    [self addPort:[[FMRPrimitiveInputPort alloc] initWithName:@"Refresh" uniqueKey:@"Form.refreshInput" defaultValue:[PMRPrimitive primitiveWithBooleanValue:NO]] portGroup:nil];
         
         // Outputs
         
-        [self addPort:[[FMRPrimitiveOutputPort alloc] initWithName:@"DataForm" uniqueKey:@"Form.dataForm"] portGroup:nil];
+        [self addPort:[[FMRPrimitiveOutputPort alloc] initWithName:@"dataForm" uniqueKey:@"Form.dataForm"] portGroup:nil];
      /*   [self addPort:[[FMRPrimitiveOutputPort alloc] initWithName:@"Connected" uniqueKey:@"Form.connectOutput"] portGroup:nil];
         [self addPort:[[FMRPrimitiveOutputPort alloc] initWithName:@"Left Trigger" uniqueKey:@"Form.leftTriggerOutput"] portGroup:nil];
         
