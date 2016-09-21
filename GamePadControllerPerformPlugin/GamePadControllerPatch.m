@@ -78,7 +78,7 @@ GCController *mainController;
 
     {
          NSString *message = @"";
-        _leftTrigger.booleanValue = false;
+        _leftTrigger.numberValue = 0.0;
         _rightTrigger.booleanValue = false;
         _leftShoulderButton.booleanValue = false;
         _rightShoulderButton.booleanValue = false;
@@ -95,7 +95,7 @@ GCController *mainController;
         
         // left trigger
         if (gamepad.leftTrigger == element && gamepad.leftTrigger.isPressed) {
-           _leftTrigger.booleanValue = true;
+           _leftTrigger.numberValue = 1.0;
             
             
             // message = @"Left Trigger";
@@ -188,6 +188,7 @@ GCController *mainController;
                 message = [NSString stringWithFormat:@"Right Stick %f", gamepad.rightThumbstick.yAxis.value];
             }
             if (gamepad.rightThumbstick.down.isPressed) {
+                _rightStickxPos.numberValue = gamepad.rightThumbstick.yAxis.value;
                 message = [NSString stringWithFormat:@"Right Stick %f", gamepad.rightThumbstick.yAxis.value];
             }
             if (gamepad.rightThumbstick.left.isPressed) {

@@ -19,6 +19,8 @@
 @property (nonatomic, readonly) PMRPrimitiveOutputPort *bButton;
 @property (nonatomic, readonly) PMRPrimitiveOutputPort *xButton;
 @property (nonatomic, readonly) PMRPrimitiveOutputPort *yButton;
+@property (nonatomic, readonly) PMRPrimitiveOutputPort *rightStickxPos;
+
 
 
 
