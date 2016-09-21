@@ -801,6 +801,7 @@
 				A06EAA751D9093750022E162 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A06EAA761D9093750022E162 /* Build configuration list for PBXNativeTarget "GamePadControllerFormPlugin" */ = {
 			isa = XCConfigurationList;
@@ -809,6 +810,7 @@
 				A06EAA781D9093750022E162 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A06EAA791D9093750022E162 /* Build configuration list for PBXNativeTarget "GamePadControllerPerformPlugin" */ = {
 			isa = XCConfigurationList;
@@ -817,6 +819,7 @@
 				A06EAA7B1D9093750022E162 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A06EAA7C1D9093750022E162 /* Build configuration list for PBXNativeTarget "GamePadControllerViewer" */ = {
 			isa = XCConfigurationList;
@@ -825,6 +828,7 @@
 				A06EAA7E1D9093750022E162 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -9,9 +9,27 @@
 #import <Performer/Performer.h>
 @interface GamePadControllerPatch : PMRPatch
 
-@property (nonatomic, readonly) PMRPrimitiveInputPort *onOffInput;
-@property (nonatomic, readonly) PMRPrimitiveOutputPort *valueOuput;
-@property (nonatomic, readonly) PMRPrimitiveOutputPort *leftTriggerOuput;
 
+@property (nonatomic, readonly) PMRPrimitiveOutputPort *connected;
+@property (nonatomic, readonly) PMRPrimitiveOutputPort *leftTrigger;
+@property (nonatomic, readonly) PMRPrimitiveOutputPort *rightTrigger;
+@property (nonatomic, readonly) PMRPrimitiveOutputPort *leftShoulderButton;
+@property (nonatomic, readonly) PMRPrimitiveOutputPort *rightShoulderButton;
+@property (nonatomic, readonly) PMRPrimitiveOutputPort *aButton;
+@property (nonatomic, readonly) PMRPrimitiveOutputPort *bButton;
+@property (nonatomic, readonly) PMRPrimitiveOutputPort *xButton;
+@property (nonatomic, readonly) PMRPrimitiveOutputPort *yButton;
+
+
+
+
+// left trigger
+// right trigger
+// left shoulder button
+// right shoulder button
+// A button
+// B button
+// X button
+// Y button
 
 @end

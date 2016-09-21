@@ -12,11 +12,11 @@
 @implementation GamePadControllerPlugin
 
 + (NSString *)name {
-    return @"GamePadController";
+    return @"Game Pad Controller";
 }
 
 + (NSString *)description {
-    return @"Created by Jonathan Hammond on 19/09/2016";
+    return @"Created by Jonathan Hammond on 19/09/2016 www.justaddmusicmedia.com";
 }
 
 + (NSArray *)nodeClasses {

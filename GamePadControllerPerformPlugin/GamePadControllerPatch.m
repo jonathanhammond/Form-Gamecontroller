@@ -24,11 +24,10 @@ GCController *mainController;
 
 - (void)processPatchWithContext:(PMRProcessContext *)context {
  
-  //  _valueOuput.stringValue = @"run";
     
      [[UIApplication sharedApplication]setIdleTimerDisabled:YES];
     
-       [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(controllerWasConnected:) name:GCControllerDidConnectNotification object:nil];
+     [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(controllerWasConnected:) name:GCControllerDidConnectNotification object:nil];
      [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(controllerWasDisconnected:) name:GCControllerDidDisconnectNotification object:nil];
     
     
@@ -44,11 +43,7 @@ GCController *mainController;
     GCController *controller = (GCController *)notification.object;
     NSString *status = [NSString stringWithFormat:@"Controller connected\nName: %@\n", controller.vendorName];
     
-    _valueOuput.stringValue = status;
-    NSLog (status);
-    
- //   GCController *mainController;
-     mainController = controller;
+    mainController = controller;
 
     NSObject *mainController;
     mainController = controller;
@@ -63,9 +58,8 @@ GCController *mainController;
     // a controller was disconnected
     GCController *controller = (GCController *)notification.object;
     NSString *status = [NSString stringWithFormat:@"Controller disconnected:\n%@", controller.vendorName];
-    _valueOuput.stringValue = status;
-    NSLog (status);
-    //  self.mainController = nil;
+
+    mainController = nil;
 }
 
 
@@ -74,7 +68,6 @@ GCController *mainController;
     
     
     
-   //  _valueOuput.stringValue = @"hello";
     NSLog(@"hello");
     
     
@@ -83,58 +76,77 @@ GCController *mainController;
     
     profile.valueChangedHandler = ^(GCExtendedGamepad *gamepad, GCControllerElement *element)
 
-    //GCExtendedGamepad *gamepad;
-   // GCControllerElement *element;
     {
          NSString *message = @"";
-          _valueOuput.stringValue = @"hello2";
+        _leftTrigger.booleanValue = false;
+        _rightTrigger.booleanValue = false;
+        _leftShoulderButton.booleanValue = false;
+        _rightShoulderButton.booleanValue = false;
+        _aButton.booleanValue = false;
+        _bButton.booleanValue = false;
+        _xButton.booleanValue = false;
+        _yButton.booleanValue = false;
          NSLog(@"hellonew");
-       // _leftTriggerOuput.booleanValue = gamepad.leftTrigger;
-      //  CGPoint position = CGPointMake(0, 0);
        
+        
+
+
+        
+        
         // left trigger
         if (gamepad.leftTrigger == element && gamepad.leftTrigger.isPressed) {
-            message = @"Left Trigger";
+           _leftTrigger.booleanValue = true;
+            
+            
+            // message = @"Left Trigger";
             NSLog (@"left trigger");
-            _valueOuput.stringValue = message;
+            
         }
         
         // right trigger
         if (gamepad.rightTrigger == element && gamepad.rightTrigger.isPressed) {
-            message = @"Right Trigger";
+            _rightTrigger.booleanValue = true;
+            
+            //message = @"Right Trigger";
             NSLog (@"right trigger");
         }
         
         // left shoulder button
         if (gamepad.leftShoulder == element && gamepad.leftShoulder.isPressed) {
-            message = @"Left Shoulder Button";
+            _leftShoulderButton.booleanValue = true;
+            //message = @"Left Shoulder Button";
             NSLog (@"left shoulder button");
         }
         
         // right shoulder button
         if (gamepad.rightShoulder == element && gamepad.rightShoulder.isPressed) {
-            message = @"Right Shoulder Button";
+            _rightShoulderButton.booleanValue = true;
+            //message = @"Right Shoulder Button";
         }
         
         // A button
         if (gamepad.buttonA == element && gamepad.buttonA.isPressed) {
-            message = @"A Button";
+            _aButton.booleanValue = true;
+            //message = @"A Button";
             
         }
         
         // B button
         if (gamepad.buttonB == element && gamepad.buttonB.isPressed) {
-            message = @"B Button";
+            _bButton.booleanValue = true;
+            //message = @"B Button";
         }
         
         // X button
         if (gamepad.buttonX == element && gamepad.buttonX.isPressed) {
-            message = @"X Button";
+            _xButton.booleanValue = true;
+            //message = @"X Button";
         }
         
         // Y button
         if (gamepad.buttonY == element && gamepad.buttonY.isPressed) {
-            message = @"Y Button";
+            _yButton.booleanValue = true;
+            //message = @"Y Button";
         }
         
         // d-pad
@@ -187,11 +199,10 @@ GCController *mainController;
          //   position = CGPointMake(gamepad.rightThumbstick.xAxis.value, gamepad.rightThumbstick.yAxis.value);
         }
         
-        
+       // _leftTrigger.booleanValue = false;
         //Send information to Form
-            _valueOuput.stringValue = message;
+            _connected.stringValue = message;
         
-     //*/
     
     };
 
