@@ -30,10 +30,6 @@ GCController *mainController;
      [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(controllerWasConnected:) name:GCControllerDidConnectNotification object:nil];
      [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(controllerWasDisconnected:) name:GCControllerDidDisconnectNotification object:nil];
     
-    
-    
-    
-
 }
 
 
@@ -42,12 +38,11 @@ GCController *mainController;
     // a controller was connected
     GCController *controller = (GCController *)notification.object;
     NSString *status = [NSString stringWithFormat:@"Controller connected\nName: %@\n", controller.vendorName];
-    
+    _connected.stringValue = status;
     mainController = controller;
 
     NSObject *mainController;
     mainController = controller;
-    
     
     [self reactToInput];
     
@@ -58,10 +53,9 @@ GCController *mainController;
     // a controller was disconnected
     GCController *controller = (GCController *)notification.object;
     NSString *status = [NSString stringWithFormat:@"Controller disconnected:\n%@", controller.vendorName];
-
+_connected.stringValue = status;
     mainController = nil;
 }
-
 
 
 - (void)reactToInput {
@@ -69,8 +63,6 @@ GCController *mainController;
     
     
     NSLog(@"hello");
-    
-    
     
     GCExtendedGamepad *profile = mainController.extendedGamepad;
     
@@ -86,7 +78,12 @@ GCController *mainController;
         _bButton.numberValue = 0.0;
         _xButton.numberValue = 0.0;
         _yButton.numberValue = 0.0;
-         NSLog(@"hellonew");
+        _dPadUp.numberValue = 0.0;
+        _dPadDown.numberValue = 0.0;
+        _dPadLeft.numberValue = 0.0;
+        _dPadRight.numberValue = 0.0;
+
+        NSLog(@"hellonew");
        
         
 
@@ -98,7 +95,7 @@ GCController *mainController;
            _leftTrigger.numberValue = 1.0;
             
             
-            // message = @"Left Trigger";
+            message = @"Left Trigger";
             NSLog (@"left trigger");
             
         }
@@ -107,60 +104,64 @@ GCController *mainController;
         if (gamepad.rightTrigger == element && gamepad.rightTrigger.isPressed) {
             _rightTrigger.numberValue = 1.0;
             
-            //message = @"Right Trigger";
+            message = @"Right Trigger";
             NSLog (@"right trigger");
         }
         
         // left shoulder button
         if (gamepad.leftShoulder == element && gamepad.leftShoulder.isPressed) {
             _leftShoulderButton.numberValue = 1.0;
-            //message = @"Left Shoulder Button";
+            message = @"Left Shoulder Button";
             NSLog (@"left shoulder button");
         }
         
         // right shoulder button
         if (gamepad.rightShoulder == element && gamepad.rightShoulder.isPressed) {
             _rightShoulderButton.numberValue = 1.0;
-            //message = @"Right Shoulder Button";
+            message = @"Right Shoulder Button";
         }
         
         // A button
         if (gamepad.buttonA == element && gamepad.buttonA.isPressed) {
             _aButton.numberValue = 1.0;
-            //message = @"A Button";
+            message = @"A Button";
             
         }
         
         // B button
         if (gamepad.buttonB == element && gamepad.buttonB.isPressed) {
             _bButton.numberValue = 1.0;
-            //message = @"B Button";
+            message = @"B Button";
         }
         
         // X button
         if (gamepad.buttonX == element && gamepad.buttonX.isPressed) {
             _xButton.numberValue = 1.0;
-            //message = @"X Button";
+            message = @"X Button";
         }
         
         // Y button
         if (gamepad.buttonY == element && gamepad.buttonY.isPressed) {
             _yButton.numberValue = 1.0;
-            //message = @"Y Button";
+            message = @"Y Button";
         }
         
         // d-pad
         if (gamepad.dpad == element) {
             if (gamepad.dpad.up.isPressed) {
+                _dPadUp.numberValue = 1.0;
                 message = @"D-Pad Up";
             }
             if (gamepad.dpad.down.isPressed) {
+                _dPadDown.numberValue = 1.0;
                 message = @"D-Pad Down";
             }
             if (gamepad.dpad.left.isPressed) {
+                _dPadLeft.numberValue = 1.0;
                 message = @"D-Pad Left";
             }
             if (gamepad.dpad.right.isPressed) {
+                _dPadRight.numberValue = 1.0;
                 message = @"D-Pad Right";
             }
         }

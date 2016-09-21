@@ -33,6 +33,13 @@
     [self addPort:[[FMRPrimitiveOutputPort alloc] initWithName:@"B button" uniqueKey:@"Form.BButton"] portGroup:@"Buttons"];
     [self addPort:[[FMRPrimitiveOutputPort alloc] initWithName:@"X button" uniqueKey:@"Form.XButton"] portGroup:@"Buttons"];
     [self addPort:[[FMRPrimitiveOutputPort alloc] initWithName:@"Y button" uniqueKey:@"Form.YButton"] portGroup:@"Buttons"];
+    [self addPort:[[FMRPrimitiveOutputPort alloc] initWithName:@"Dpad Up" uniqueKey:@"Form.dPadUp"] portGroup:@"Dpad"];
+    [self addPort:[[FMRPrimitiveOutputPort alloc] initWithName:@"Dpad Down" uniqueKey:@"Form.dPadDown"] portGroup:@"Dpad"];
+    [self addPort:[[FMRPrimitiveOutputPort alloc] initWithName:@"Dpad Left" uniqueKey:@"Form.dPadLeft"] portGroup:@"Dpad"];
+         [self addPort:[[FMRPrimitiveOutputPort alloc] initWithName:@"Dpad Right" uniqueKey:@"Form.dPadRight"] portGroup:@"Dpad"];
+        
+        
+        
     [self addPort:[[FMRPrimitiveOutputPort alloc] initWithName:@"Right Stick X" uniqueKey:@"Form.rightStickxPos"] portGroup:@"Buttons"];
 }
 

@@ -21,6 +21,7 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		A0578DDA1D933C5A00A12566 /* GameController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0578DD91D933C5A00A12566 /* GameController.framework */; };
 		A06EAA0A1D9093720022E162 /* GamePadControllerFormPlugin-Prefix.pch in Resources */ = {isa = PBXBuildFile; fileRef = A06EAA091D9093720022E162 /* GamePadControllerFormPlugin-Prefix.pch */; };
 		A06EAA0D1D9093740022E162 /* Former.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A06EAA0C1D9093740022E162 /* Former.framework */; };
 		A06EAA0F1D9093740022E162 /* RelativeInterfaceMac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A06EAA0E1D9093740022E162 /* RelativeInterfaceMac.framework */; };
@@ -81,6 +82,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		A0578DD91D933C5A00A12566 /* GameController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameController.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/GameController.framework; sourceTree = DEVELOPER_DIR; };
 		A06EAA051D9093720022E162 /* GamePadControllerFormPlugin.formplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GamePadControllerFormPlugin.formplugin; sourceTree = BUILT_PRODUCTS_DIR; };
 		A06EAA091D9093720022E162 /* GamePadControllerFormPlugin-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GamePadControllerFormPlugin-Prefix.pch"; sourceTree = "<group>"; };
 		A06EAA0C1D9093740022E162 /* Former.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Former.framework; path = ../Frameworks/Former.framework; sourceTree = "<group>"; };
@@ -145,6 +147,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0578DDA1D933C5A00A12566 /* GameController.framework in Frameworks */,
 				A06EAA251D9093750022E162 /* RelativeInterface.framework in Frameworks */,
 				A06EAA231D9093750022E162 /* Performer.framework in Frameworks */,
 			);
@@ -163,6 +166,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A0578DD81D933C5A00A12566 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A0578DD91D933C5A00A12566 /* GameController.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A06EA9FA1D9093720022E162 = {
 			isa = PBXGroup;
 			children = (
@@ -170,6 +181,7 @@
 				A06EAA1D1D9093740022E162 /* GamePadControllerPerformPlugin */,
 				A06EAA311D9093750022E162 /* GamePadControllerViewer */,
 				A06EAA061D9093720022E162 /* Products */,
+				A0578DD81D933C5A00A12566 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
