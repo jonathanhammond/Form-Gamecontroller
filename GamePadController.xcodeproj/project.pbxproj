@@ -1,0 +1,832 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		A06EAA001D9093720022E162 /* GamePadController */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = A06EAA731D9093750022E162 /* Build configuration list for PBXAggregateTarget "GamePadController" */;
+			buildPhases = (
+				A06EA9FF1D9093720022E162 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = GamePadController;
+			productName = GamePadController;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		A06EAA0A1D9093720022E162 /* GamePadControllerFormPlugin-Prefix.pch in Resources */ = {isa = PBXBuildFile; fileRef = A06EAA091D9093720022E162 /* GamePadControllerFormPlugin-Prefix.pch */; };
+		A06EAA0D1D9093740022E162 /* Former.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A06EAA0C1D9093740022E162 /* Former.framework */; };
+		A06EAA0F1D9093740022E162 /* RelativeInterfaceMac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A06EAA0E1D9093740022E162 /* RelativeInterfaceMac.framework */; };
+		A06EAA121D9093740022E162 /* GamePadControllerPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = A06EAA111D9093740022E162 /* GamePadControllerPlugin.m */; };
+		A06EAA151D9093740022E162 /* GamePadControllerNode.m in Sources */ = {isa = PBXBuildFile; fileRef = A06EAA141D9093740022E162 /* GamePadControllerNode.m */; };
+		A06EAA201D9093740022E162 /* GamePadControllerPerformPlugin-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = A06EAA1F1D9093740022E162 /* GamePadControllerPerformPlugin-Prefix.pch */; };
+		A06EAA231D9093750022E162 /* Performer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A06EAA221D9093750022E162 /* Performer.framework */; };
+		A06EAA251D9093750022E162 /* RelativeInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A06EAA241D9093750022E162 /* RelativeInterface.framework */; };
+		A06EAA271D9093750022E162 /* GamePadControllerPatch.h in Headers */ = {isa = PBXBuildFile; fileRef = A06EAA261D9093750022E162 /* GamePadControllerPatch.h */; };
+		A06EAA291D9093750022E162 /* GamePadControllerPatch.m in Sources */ = {isa = PBXBuildFile; fileRef = A06EAA281D9093750022E162 /* GamePadControllerPatch.m */; };
+		A06EAA341D9093750022E162 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A06EAA331D9093750022E162 /* main.m */; };
+		A06EAA371D9093750022E162 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A06EAA361D9093750022E162 /* AppDelegate.m */; };
+		A06EAA3A1D9093750022E162 /* ConnectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A06EAA391D9093750022E162 /* ConnectViewController.m */; };
+		A06EAA3C1D9093750022E162 /* GamePadControllerViewer-Prefix.pch in Resources */ = {isa = PBXBuildFile; fileRef = A06EAA3B1D9093750022E162 /* GamePadControllerViewer-Prefix.pch */; };
+		A06EAA3E1D9093750022E162 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A06EAA3D1D9093750022E162 /* Images.xcassets */; };
+		A06EAA401D9093750022E162 /* Connect@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A06EAA3F1D9093750022E162 /* Connect@2x.png */; };
+		A06EAA431D9093750022E162 /* MaterialIcons-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A06EAA421D9093750022E162 /* MaterialIcons-Regular.ttf */; };
+		A06EAA451D9093750022E162 /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A06EAA441D9093750022E162 /* Roboto-Black.ttf */; };
+		A06EAA471D9093750022E162 /* Roboto-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A06EAA461D9093750022E162 /* Roboto-BlackItalic.ttf */; };
+		A06EAA491D9093750022E162 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A06EAA481D9093750022E162 /* Roboto-Bold.ttf */; };
+		A06EAA4B1D9093750022E162 /* Roboto-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A06EAA4A1D9093750022E162 /* Roboto-BoldItalic.ttf */; };
+		A06EAA4D1D9093750022E162 /* Roboto-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A06EAA4C1D9093750022E162 /* Roboto-Italic.ttf */; };
+		A06EAA4F1D9093750022E162 /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A06EAA4E1D9093750022E162 /* Roboto-Light.ttf */; };
+		A06EAA511D9093750022E162 /* Roboto-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A06EAA501D9093750022E162 /* Roboto-LightItalic.ttf */; };
+		A06EAA531D9093750022E162 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A06EAA521D9093750022E162 /* Roboto-Medium.ttf */; };
+		A06EAA551D9093750022E162 /* Roboto-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A06EAA541D9093750022E162 /* Roboto-MediumItalic.ttf */; };
+		A06EAA571D9093750022E162 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A06EAA561D9093750022E162 /* Roboto-Regular.ttf */; };
+		A06EAA591D9093750022E162 /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A06EAA581D9093750022E162 /* Roboto-Thin.ttf */; };
+		A06EAA5B1D9093750022E162 /* Roboto-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A06EAA5A1D9093750022E162 /* Roboto-ThinItalic.ttf */; };
+		A06EAA5D1D9093750022E162 /* RobotoCondensed-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A06EAA5C1D9093750022E162 /* RobotoCondensed-Bold.ttf */; };
+		A06EAA5F1D9093750022E162 /* RobotoCondensed-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A06EAA5E1D9093750022E162 /* RobotoCondensed-BoldItalic.ttf */; };
+		A06EAA611D9093750022E162 /* RobotoCondensed-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A06EAA601D9093750022E162 /* RobotoCondensed-Italic.ttf */; };
+		A06EAA631D9093750022E162 /* RobotoCondensed-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A06EAA621D9093750022E162 /* RobotoCondensed-Light.ttf */; };
+		A06EAA651D9093750022E162 /* RobotoCondensed-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A06EAA641D9093750022E162 /* RobotoCondensed-LightItalic.ttf */; };
+		A06EAA671D9093750022E162 /* RobotoCondensed-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A06EAA661D9093750022E162 /* RobotoCondensed-Regular.ttf */; };
+		A06EAA6A1D9093750022E162 /* Performer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A06EAA691D9093750022E162 /* Performer.framework */; };
+		A06EAA6C1D9093750022E162 /* RelativeInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A06EAA6B1D9093750022E162 /* RelativeInterface.framework */; };
+		A06EAA6F1D9093750022E162 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A06EAA6D1D9093750022E162 /* LaunchScreen.xib */; };
+		A06EAA7F1D9093830022E162 /* GamePadControllerPerformPlugin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A06EAA1C1D9093740022E162 /* GamePadControllerPerformPlugin.framework */; };
+		A06EAA801D9093910022E162 /* Performer.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = A06EAA691D9093750022E162 /* Performer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A06EAA811D9093910022E162 /* RelativeInterface.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = A06EAA6B1D9093750022E162 /* RelativeInterface.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A06EAA821D9093910022E162 /* GamePadControllerPerformPlugin.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = A06EAA1C1D9093740022E162 /* GamePadControllerPerformPlugin.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A06EAA2E1D9093750022E162 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A06EAA801D9093910022E162 /* Performer.framework in CopyFiles */,
+				A06EAA811D9093910022E162 /* RelativeInterface.framework in CopyFiles */,
+				A06EAA821D9093910022E162 /* GamePadControllerPerformPlugin.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A06EAA051D9093720022E162 /* GamePadControllerFormPlugin.formplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GamePadControllerFormPlugin.formplugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		A06EAA091D9093720022E162 /* GamePadControllerFormPlugin-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GamePadControllerFormPlugin-Prefix.pch"; sourceTree = "<group>"; };
+		A06EAA0C1D9093740022E162 /* Former.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Former.framework; path = ../Frameworks/Former.framework; sourceTree = "<group>"; };
+		A06EAA0E1D9093740022E162 /* RelativeInterfaceMac.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RelativeInterfaceMac.framework; path = ../Frameworks/RelativeInterfaceMac.framework; sourceTree = "<group>"; };
+		A06EAA101D9093740022E162 /* GamePadControllerPlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GamePadControllerPlugin.h; sourceTree = "<group>"; };
+		A06EAA111D9093740022E162 /* GamePadControllerPlugin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GamePadControllerPlugin.m; sourceTree = "<group>"; };
+		A06EAA131D9093740022E162 /* GamePadControllerNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GamePadControllerNode.h; sourceTree = "<group>"; };
+		A06EAA141D9093740022E162 /* GamePadControllerNode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GamePadControllerNode.m; sourceTree = "<group>"; };
+		A06EAA161D9093740022E162 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A06EAA1C1D9093740022E162 /* GamePadControllerPerformPlugin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GamePadControllerPerformPlugin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A06EAA1F1D9093740022E162 /* GamePadControllerPerformPlugin-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GamePadControllerPerformPlugin-Prefix.pch"; sourceTree = "<group>"; };
+		A06EAA221D9093750022E162 /* Performer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Performer.framework; path = ../Frameworks/Performer.framework; sourceTree = "<group>"; };
+		A06EAA241D9093750022E162 /* RelativeInterface.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RelativeInterface.framework; path = ../Frameworks/RelativeInterface.framework; sourceTree = "<group>"; };
+		A06EAA261D9093750022E162 /* GamePadControllerPatch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GamePadControllerPatch.h; sourceTree = "<group>"; };
+		A06EAA281D9093750022E162 /* GamePadControllerPatch.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GamePadControllerPatch.m; sourceTree = "<group>"; };
+		A06EAA2A1D9093750022E162 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A06EAA301D9093750022E162 /* GamePadControllerViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GamePadControllerViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A06EAA331D9093750022E162 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A06EAA351D9093750022E162 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A06EAA361D9093750022E162 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A06EAA381D9093750022E162 /* ConnectViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConnectViewController.h; sourceTree = "<group>"; };
+		A06EAA391D9093750022E162 /* ConnectViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConnectViewController.m; sourceTree = "<group>"; };
+		A06EAA3B1D9093750022E162 /* GamePadControllerViewer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GamePadControllerViewer-Prefix.pch"; sourceTree = "<group>"; };
+		A06EAA3D1D9093750022E162 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A06EAA3F1D9093750022E162 /* Connect@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Connect@2x.png"; sourceTree = "<group>"; };
+		A06EAA421D9093750022E162 /* MaterialIcons-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MaterialIcons-Regular.ttf"; sourceTree = "<group>"; };
+		A06EAA441D9093750022E162 /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Black.ttf"; sourceTree = "<group>"; };
+		A06EAA461D9093750022E162 /* Roboto-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BlackItalic.ttf"; sourceTree = "<group>"; };
+		A06EAA481D9093750022E162 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		A06EAA4A1D9093750022E162 /* Roboto-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BoldItalic.ttf"; sourceTree = "<group>"; };
+		A06EAA4C1D9093750022E162 /* Roboto-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Italic.ttf"; sourceTree = "<group>"; };
+		A06EAA4E1D9093750022E162 /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
+		A06EAA501D9093750022E162 /* Roboto-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-LightItalic.ttf"; sourceTree = "<group>"; };
+		A06EAA521D9093750022E162 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		A06EAA541D9093750022E162 /* Roboto-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-MediumItalic.ttf"; sourceTree = "<group>"; };
+		A06EAA561D9093750022E162 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		A06EAA581D9093750022E162 /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Thin.ttf"; sourceTree = "<group>"; };
+		A06EAA5A1D9093750022E162 /* Roboto-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-ThinItalic.ttf"; sourceTree = "<group>"; };
+		A06EAA5C1D9093750022E162 /* RobotoCondensed-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-Bold.ttf"; sourceTree = "<group>"; };
+		A06EAA5E1D9093750022E162 /* RobotoCondensed-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-BoldItalic.ttf"; sourceTree = "<group>"; };
+		A06EAA601D9093750022E162 /* RobotoCondensed-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-Italic.ttf"; sourceTree = "<group>"; };
+		A06EAA621D9093750022E162 /* RobotoCondensed-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-Light.ttf"; sourceTree = "<group>"; };
+		A06EAA641D9093750022E162 /* RobotoCondensed-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-LightItalic.ttf"; sourceTree = "<group>"; };
+		A06EAA661D9093750022E162 /* RobotoCondensed-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-Regular.ttf"; sourceTree = "<group>"; };
+		A06EAA691D9093750022E162 /* Performer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Performer.framework; path = ../Frameworks/Performer.framework; sourceTree = "<group>"; };
+		A06EAA6B1D9093750022E162 /* RelativeInterface.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RelativeInterface.framework; path = ../Frameworks/RelativeInterface.framework; sourceTree = "<group>"; };
+		A06EAA6E1D9093750022E162 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		A06EAA701D9093750022E162 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A06EAA021D9093720022E162 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A06EAA0F1D9093740022E162 /* RelativeInterfaceMac.framework in Frameworks */,
+				A06EAA0D1D9093740022E162 /* Former.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A06EAA181D9093740022E162 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A06EAA251D9093750022E162 /* RelativeInterface.framework in Frameworks */,
+				A06EAA231D9093750022E162 /* Performer.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A06EAA2C1D9093750022E162 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A06EAA7F1D9093830022E162 /* GamePadControllerPerformPlugin.framework in Frameworks */,
+				A06EAA6C1D9093750022E162 /* RelativeInterface.framework in Frameworks */,
+				A06EAA6A1D9093750022E162 /* Performer.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A06EA9FA1D9093720022E162 = {
+			isa = PBXGroup;
+			children = (
+				A06EAA071D9093720022E162 /* GamePadControllerFormPlugin */,
+				A06EAA1D1D9093740022E162 /* GamePadControllerPerformPlugin */,
+				A06EAA311D9093750022E162 /* GamePadControllerViewer */,
+				A06EAA061D9093720022E162 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A06EAA061D9093720022E162 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A06EAA051D9093720022E162 /* GamePadControllerFormPlugin.formplugin */,
+				A06EAA1C1D9093740022E162 /* GamePadControllerPerformPlugin.framework */,
+				A06EAA301D9093750022E162 /* GamePadControllerViewer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A06EAA071D9093720022E162 /* GamePadControllerFormPlugin */ = {
+			isa = PBXGroup;
+			children = (
+				A06EAA101D9093740022E162 /* GamePadControllerPlugin.h */,
+				A06EAA111D9093740022E162 /* GamePadControllerPlugin.m */,
+				A06EAA131D9093740022E162 /* GamePadControllerNode.h */,
+				A06EAA141D9093740022E162 /* GamePadControllerNode.m */,
+				A06EAA161D9093740022E162 /* Info.plist */,
+				A06EAA0B1D9093740022E162 /* Frameworks */,
+				A06EAA081D9093720022E162 /* Supporting Files */,
+			);
+			path = GamePadControllerFormPlugin;
+			sourceTree = "<group>";
+		};
+		A06EAA081D9093720022E162 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A06EAA091D9093720022E162 /* GamePadControllerFormPlugin-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A06EAA0B1D9093740022E162 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A06EAA0C1D9093740022E162 /* Former.framework */,
+				A06EAA0E1D9093740022E162 /* RelativeInterfaceMac.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A06EAA1D1D9093740022E162 /* GamePadControllerPerformPlugin */ = {
+			isa = PBXGroup;
+			children = (
+				A06EAA261D9093750022E162 /* GamePadControllerPatch.h */,
+				A06EAA281D9093750022E162 /* GamePadControllerPatch.m */,
+				A06EAA2A1D9093750022E162 /* Info.plist */,
+				A06EAA211D9093750022E162 /* Frameworks */,
+				A06EAA1E1D9093740022E162 /* Supporting Files */,
+			);
+			path = GamePadControllerPerformPlugin;
+			sourceTree = "<group>";
+		};
+		A06EAA1E1D9093740022E162 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A06EAA1F1D9093740022E162 /* GamePadControllerPerformPlugin-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A06EAA211D9093750022E162 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A06EAA221D9093750022E162 /* Performer.framework */,
+				A06EAA241D9093750022E162 /* RelativeInterface.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A06EAA311D9093750022E162 /* GamePadControllerViewer */ = {
+			isa = PBXGroup;
+			children = (
+				A06EAA351D9093750022E162 /* AppDelegate.h */,
+				A06EAA361D9093750022E162 /* AppDelegate.m */,
+				A06EAA381D9093750022E162 /* ConnectViewController.h */,
+				A06EAA391D9093750022E162 /* ConnectViewController.m */,
+				A06EAA3D1D9093750022E162 /* Images.xcassets */,
+				A06EAA3F1D9093750022E162 /* Connect@2x.png */,
+				A06EAA6D1D9093750022E162 /* LaunchScreen.xib */,
+				A06EAA701D9093750022E162 /* Info.plist */,
+				A06EAA411D9093750022E162 /* Fonts */,
+				A06EAA681D9093750022E162 /* Frameworks */,
+				A06EAA321D9093750022E162 /* Supporting Files */,
+			);
+			path = GamePadControllerViewer;
+			sourceTree = "<group>";
+		};
+		A06EAA321D9093750022E162 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A06EAA331D9093750022E162 /* main.m */,
+				A06EAA3B1D9093750022E162 /* GamePadControllerViewer-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A06EAA411D9093750022E162 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				A06EAA421D9093750022E162 /* MaterialIcons-Regular.ttf */,
+				A06EAA441D9093750022E162 /* Roboto-Black.ttf */,
+				A06EAA461D9093750022E162 /* Roboto-BlackItalic.ttf */,
+				A06EAA481D9093750022E162 /* Roboto-Bold.ttf */,
+				A06EAA4A1D9093750022E162 /* Roboto-BoldItalic.ttf */,
+				A06EAA4C1D9093750022E162 /* Roboto-Italic.ttf */,
+				A06EAA4E1D9093750022E162 /* Roboto-Light.ttf */,
+				A06EAA501D9093750022E162 /* Roboto-LightItalic.ttf */,
+				A06EAA521D9093750022E162 /* Roboto-Medium.ttf */,
+				A06EAA541D9093750022E162 /* Roboto-MediumItalic.ttf */,
+				A06EAA561D9093750022E162 /* Roboto-Regular.ttf */,
+				A06EAA581D9093750022E162 /* Roboto-Thin.ttf */,
+				A06EAA5A1D9093750022E162 /* Roboto-ThinItalic.ttf */,
+				A06EAA5C1D9093750022E162 /* RobotoCondensed-Bold.ttf */,
+				A06EAA5E1D9093750022E162 /* RobotoCondensed-BoldItalic.ttf */,
+				A06EAA601D9093750022E162 /* RobotoCondensed-Italic.ttf */,
+				A06EAA621D9093750022E162 /* RobotoCondensed-Light.ttf */,
+				A06EAA641D9093750022E162 /* RobotoCondensed-LightItalic.ttf */,
+				A06EAA661D9093750022E162 /* RobotoCondensed-Regular.ttf */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
+		A06EAA681D9093750022E162 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A06EAA691D9093750022E162 /* Performer.framework */,
+				A06EAA6B1D9093750022E162 /* RelativeInterface.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		A06EAA191D9093740022E162 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A06EAA201D9093740022E162 /* GamePadControllerPerformPlugin-Prefix.pch in Headers */,
+				A06EAA271D9093750022E162 /* GamePadControllerPatch.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		A06EAA041D9093720022E162 /* GamePadControllerFormPlugin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A06EAA761D9093750022E162 /* Build configuration list for PBXNativeTarget "GamePadControllerFormPlugin" */;
+			buildPhases = (
+				A06EAA011D9093720022E162 /* Sources */,
+				A06EAA021D9093720022E162 /* Frameworks */,
+				A06EAA031D9093720022E162 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GamePadControllerFormPlugin;
+			productName = GamePadControllerFormPlugin;
+			productReference = A06EAA051D9093720022E162 /* GamePadControllerFormPlugin.formplugin */;
+			productType = "com.apple.product-type.bundle";
+		};
+		A06EAA1B1D9093740022E162 /* GamePadControllerPerformPlugin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A06EAA791D9093750022E162 /* Build configuration list for PBXNativeTarget "GamePadControllerPerformPlugin" */;
+			buildPhases = (
+				A06EAA171D9093740022E162 /* Sources */,
+				A06EAA181D9093740022E162 /* Frameworks */,
+				A06EAA191D9093740022E162 /* Headers */,
+				A06EAA1A1D9093740022E162 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GamePadControllerPerformPlugin;
+			productName = GamePadControllerPerformPlugin;
+			productReference = A06EAA1C1D9093740022E162 /* GamePadControllerPerformPlugin.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A06EAA2F1D9093750022E162 /* GamePadControllerViewer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A06EAA7C1D9093750022E162 /* Build configuration list for PBXNativeTarget "GamePadControllerViewer" */;
+			buildPhases = (
+				A06EAA2B1D9093750022E162 /* Sources */,
+				A06EAA2C1D9093750022E162 /* Frameworks */,
+				A06EAA2D1D9093750022E162 /* Resources */,
+				A06EAA2E1D9093750022E162 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GamePadControllerViewer;
+			productName = GamePadControllerViewer;
+			productReference = A06EAA301D9093750022E162 /* GamePadControllerViewer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A06EA9FB1D9093720022E162 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Just Add Music Media";
+				TargetAttributes = {
+					A06EAA001D9093720022E162 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 6EZA4ZP3UF;
+						ProvisioningStyle = Automatic;
+					};
+					A06EAA041D9093720022E162 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 6EZA4ZP3UF;
+						ProvisioningStyle = Automatic;
+					};
+					A06EAA1B1D9093740022E162 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 6EZA4ZP3UF;
+						ProvisioningStyle = Automatic;
+					};
+					A06EAA2F1D9093750022E162 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 6EZA4ZP3UF;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = A06EA9FE1D9093720022E162 /* Build configuration list for PBXProject "GamePadController" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A06EA9FA1D9093720022E162;
+			productRefGroup = A06EAA061D9093720022E162 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A06EAA001D9093720022E162 /* GamePadController */,
+				A06EAA041D9093720022E162 /* GamePadControllerFormPlugin */,
+				A06EAA1B1D9093740022E162 /* GamePadControllerPerformPlugin */,
+				A06EAA2F1D9093750022E162 /* GamePadControllerViewer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A06EAA031D9093720022E162 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A06EAA0A1D9093720022E162 /* GamePadControllerFormPlugin-Prefix.pch in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A06EAA1A1D9093740022E162 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A06EAA2D1D9093750022E162 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A06EAA491D9093750022E162 /* Roboto-Bold.ttf in Resources */,
+				A06EAA511D9093750022E162 /* Roboto-LightItalic.ttf in Resources */,
+				A06EAA611D9093750022E162 /* RobotoCondensed-Italic.ttf in Resources */,
+				A06EAA5F1D9093750022E162 /* RobotoCondensed-BoldItalic.ttf in Resources */,
+				A06EAA551D9093750022E162 /* Roboto-MediumItalic.ttf in Resources */,
+				A06EAA4D1D9093750022E162 /* Roboto-Italic.ttf in Resources */,
+				A06EAA4F1D9093750022E162 /* Roboto-Light.ttf in Resources */,
+				A06EAA3C1D9093750022E162 /* GamePadControllerViewer-Prefix.pch in Resources */,
+				A06EAA4B1D9093750022E162 /* Roboto-BoldItalic.ttf in Resources */,
+				A06EAA471D9093750022E162 /* Roboto-BlackItalic.ttf in Resources */,
+				A06EAA591D9093750022E162 /* Roboto-Thin.ttf in Resources */,
+				A06EAA571D9093750022E162 /* Roboto-Regular.ttf in Resources */,
+				A06EAA651D9093750022E162 /* RobotoCondensed-LightItalic.ttf in Resources */,
+				A06EAA3E1D9093750022E162 /* Images.xcassets in Resources */,
+				A06EAA671D9093750022E162 /* RobotoCondensed-Regular.ttf in Resources */,
+				A06EAA6F1D9093750022E162 /* LaunchScreen.xib in Resources */,
+				A06EAA531D9093750022E162 /* Roboto-Medium.ttf in Resources */,
+				A06EAA631D9093750022E162 /* RobotoCondensed-Light.ttf in Resources */,
+				A06EAA5B1D9093750022E162 /* Roboto-ThinItalic.ttf in Resources */,
+				A06EAA5D1D9093750022E162 /* RobotoCondensed-Bold.ttf in Resources */,
+				A06EAA451D9093750022E162 /* Roboto-Black.ttf in Resources */,
+				A06EAA401D9093750022E162 /* Connect@2x.png in Resources */,
+				A06EAA431D9093750022E162 /* MaterialIcons-Regular.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A06EA9FF1D9093720022E162 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "cd \"${BUILD_DIR}\"\n\n## Build all of the Xcode configurations.\n# Mac\nxcodebuild -project \"${PROJECT_DIR}/GamePadController.xcodeproj\" -scheme GamePadControllerFormPlugin -configuration Release BUILD_DIR=\"${BUILD_DIR}\"\n\n# iOS\nxcodebuild -project \"${PROJECT_DIR}/GamePadController.xcodeproj\" -scheme GamePadControllerPerformPlugin -configuration Release -sdk iphoneos BUILD_DIR=\"${BUILD_DIR}\"\nxcodebuild -project \"${PROJECT_DIR}/GamePadController.xcodeproj\" -scheme GamePadControllerPerformPlugin -configuration Release -sdk iphonesimulator BUILD_DIR=\"${BUILD_DIR}\"\n\n# Create the destination directory.\nDEST_DIR=./GamePadController\nrm -rf $DEST_DIR\nmkdir -p \"$DEST_DIR/GamePadController.formplugin\"\n\n# Copy the OSX build\ncp -fR \"./Release/GamePadControllerFormPlugin.formplugin/\" \"$DEST_DIR/GamePadController.formplugin/\"\n\n# Copy the iOS build\ncp -fR \"./Release-iphoneos/GamePadControllerPerformPlugin.framework\" \"$DEST_DIR/GamePadControllerPerformPlugin.framework\"\n\n# lipo the iOS build\nlipo -create \"${BUILD_DIR}/Release-iphonesimulator/GamePadControllerPerformPlugin.framework/GamePadControllerPerformPlugin\" \"${BUILD_DIR}/Release-iphoneos/GamePadControllerPerformPlugin.framework/GamePadControllerPerformPlugin\" -output \"$DEST_DIR/GamePadControllerPerformPlugin.framework/GamePadControllerPerformPlugin\"\n\n# Copy the iOS build into the OSX plugin for safe keeping\nmkdir -p \"$DEST_DIR/GamePadController.formplugin/Contents/Perform/\"\ncp -fR \"$DEST_DIR/GamePadControllerPerformPlugin.framework\" \"$DEST_DIR/GamePadController.formplugin/Contents/Perform/\"\n\n# Install plugin\nmkdir -p \"$HOME/Library/Application Support/Form/PlugIns/\"\ncp -fR \"$DEST_DIR/GamePadController.formplugin\" \"$HOME/Library/Application Support/Form/PlugIns/\"\n\n# Reveal the finished plugin if we're archiving\nif [ \"${CONFIGURATION}\" = \"Release\" ]; then\n    open --reveal $DEST_DIR\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A06EAA011D9093720022E162 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A06EAA121D9093740022E162 /* GamePadControllerPlugin.m in Sources */,
+				A06EAA151D9093740022E162 /* GamePadControllerNode.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A06EAA171D9093740022E162 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A06EAA291D9093750022E162 /* GamePadControllerPatch.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A06EAA2B1D9093750022E162 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A06EAA371D9093750022E162 /* AppDelegate.m in Sources */,
+				A06EAA3A1D9093750022E162 /* ConnectViewController.m in Sources */,
+				A06EAA341D9093750022E162 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A06EAA6D1D9093750022E162 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A06EAA6E1D9093750022E162 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A06EAA711D9093750022E162 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+			};
+			name = Debug;
+		};
+		A06EAA721D9093750022E162 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+			};
+			name = Release;
+		};
+		A06EAA741D9093750022E162 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 6EZA4ZP3UF;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A06EAA751D9093750022E162 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 6EZA4ZP3UF;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A06EAA771D9093750022E162 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = NO;
+				DEVELOPMENT_TEAM = 6EZA4ZP3UF;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				GCC_PREFIX_HEADER = "GamePadControllerFormPlugin/GamePadControllerFormPlugin-Prefix.pch";
+				INFOPLIST_FILE = GamePadControllerFormPlugin/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = JustAddMusicMedia.GamePadControllerFormPlugin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = formplugin;
+			};
+			name = Debug;
+		};
+		A06EAA781D9093750022E162 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = NO;
+				DEVELOPMENT_TEAM = 6EZA4ZP3UF;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				GCC_PREFIX_HEADER = "GamePadControllerFormPlugin/GamePadControllerFormPlugin-Prefix.pch";
+				INFOPLIST_FILE = GamePadControllerFormPlugin/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = JustAddMusicMedia.GamePadControllerFormPlugin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = formplugin;
+			};
+			name = Release;
+		};
+		A06EAA7A1D9093750022E162 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 6EZA4ZP3UF;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GamePadControllerPerformPlugin/GamePadControllerPerformPlugin-Prefix.pch";
+				INFOPLIST_FILE = GamePadControllerPerformPlugin/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = JustAddMusicMedia.GamePadControllerPerformPlugin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A06EAA7B1D9093750022E162 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 6EZA4ZP3UF;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GamePadControllerPerformPlugin/GamePadControllerPerformPlugin-Prefix.pch";
+				INFOPLIST_FILE = GamePadControllerPerformPlugin/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = JustAddMusicMedia.GamePadControllerPerformPlugin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A06EAA7D1D9093750022E162 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 6EZA4ZP3UF;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GamePadControllerViewer/GamePadControllerViewer-Prefix.pch";
+				INFOPLIST_FILE = GamePadControllerViewer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = JustAddMusicMedia.GamePadControllerViewer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A06EAA7E1D9093750022E162 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 6EZA4ZP3UF;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GamePadControllerViewer/GamePadControllerViewer-Prefix.pch";
+				INFOPLIST_FILE = GamePadControllerViewer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = JustAddMusicMedia.GamePadControllerViewer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A06EA9FE1D9093720022E162 /* Build configuration list for PBXProject "GamePadController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A06EAA711D9093750022E162 /* Debug */,
+				A06EAA721D9093750022E162 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A06EAA731D9093750022E162 /* Build configuration list for PBXAggregateTarget "GamePadController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A06EAA741D9093750022E162 /* Debug */,
+				A06EAA751D9093750022E162 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A06EAA761D9093750022E162 /* Build configuration list for PBXNativeTarget "GamePadControllerFormPlugin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A06EAA771D9093750022E162 /* Debug */,
+				A06EAA781D9093750022E162 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A06EAA791D9093750022E162 /* Build configuration list for PBXNativeTarget "GamePadControllerPerformPlugin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A06EAA7A1D9093750022E162 /* Debug */,
+				A06EAA7B1D9093750022E162 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A06EAA7C1D9093750022E162 /* Build configuration list for PBXNativeTarget "GamePadControllerViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A06EAA7D1D9093750022E162 /* Debug */,
+				A06EAA7E1D9093750022E162 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A06EA9FB1D9093720022E162 /* Project object */;
+}

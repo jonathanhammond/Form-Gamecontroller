@@ -1,0 +1,14 @@
+//
+//  GamePadControllerViewer-Prefix.pch
+//  GamePadController
+//
+//  Created by Jonathan Hammond on 19/09/2016.
+//  Copyright © 2016 Just Add Music Media. All rights reserved.
+//
+
+#ifdef __OBJC__
+#   import <UIKit/UIKit.h>
+#   import <Foundation/Foundation.h>
+#   import <RelativeInterface/RelativeInterface.h>
+#   import <Performer/Performer.h>
+#endif

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>GamePadController.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+		<key>GamePadControllerFormPlugin.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>GamePadControllerPerformPlugin.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>GamePadControllerViewer.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>A06EAA001D9093720022E162</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A06EAA041D9093720022E162</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A06EAA1B1D9093740022E162</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A06EAA2F1D9093750022E162</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
