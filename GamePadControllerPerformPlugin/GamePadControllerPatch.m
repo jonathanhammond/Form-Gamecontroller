@@ -79,13 +79,13 @@ GCController *mainController;
     {
          NSString *message = @"";
         _leftTrigger.numberValue = 0.0;
-        _rightTrigger.booleanValue = false;
-        _leftShoulderButton.booleanValue = false;
-        _rightShoulderButton.booleanValue = false;
-        _aButton.booleanValue = false;
-        _bButton.booleanValue = false;
-        _xButton.booleanValue = false;
-        _yButton.booleanValue = false;
+        _rightTrigger.numberValue = 0.0;
+        _leftShoulderButton.numberValue = 0.0;
+        _rightShoulderButton.numberValue = 0.0;
+        _aButton.numberValue = 0.0;
+        _bButton.numberValue = 0.0;
+        _xButton.numberValue = 0.0;
+        _yButton.numberValue = 0.0;
          NSLog(@"hellonew");
        
         
@@ -105,7 +105,7 @@ GCController *mainController;
         
         // right trigger
         if (gamepad.rightTrigger == element && gamepad.rightTrigger.isPressed) {
-            _rightTrigger.booleanValue = true;
+            _rightTrigger.numberValue = 1.0;
             
             //message = @"Right Trigger";
             NSLog (@"right trigger");
@@ -113,39 +113,39 @@ GCController *mainController;
         
         // left shoulder button
         if (gamepad.leftShoulder == element && gamepad.leftShoulder.isPressed) {
-            _leftShoulderButton.booleanValue = true;
+            _leftShoulderButton.numberValue = 1.0;
             //message = @"Left Shoulder Button";
             NSLog (@"left shoulder button");
         }
         
         // right shoulder button
         if (gamepad.rightShoulder == element && gamepad.rightShoulder.isPressed) {
-            _rightShoulderButton.booleanValue = true;
+            _rightShoulderButton.numberValue = 1.0;
             //message = @"Right Shoulder Button";
         }
         
         // A button
         if (gamepad.buttonA == element && gamepad.buttonA.isPressed) {
-            _aButton.booleanValue = true;
+            _aButton.numberValue = 1.0;
             //message = @"A Button";
             
         }
         
         // B button
         if (gamepad.buttonB == element && gamepad.buttonB.isPressed) {
-            _bButton.booleanValue = true;
+            _bButton.numberValue = 1.0;
             //message = @"B Button";
         }
         
         // X button
         if (gamepad.buttonX == element && gamepad.buttonX.isPressed) {
-            _xButton.booleanValue = true;
+            _xButton.numberValue = 1.0;
             //message = @"X Button";
         }
         
         // Y button
         if (gamepad.buttonY == element && gamepad.buttonY.isPressed) {
-            _yButton.booleanValue = true;
+            _yButton.numberValue = 1.0;
             //message = @"Y Button";
         }
         
