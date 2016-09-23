@@ -7,8 +7,8 @@
 //
 
 #import <Performer/Performer.h>
-@interface GamePadControllerPatch : PMRPatch
 
+@interface GamePadControllerPatch : PMRPatch
 
 @property (nonatomic, readonly) PMRPrimitiveOutputPort *connected;
 @property (nonatomic, readonly) PMRPrimitiveOutputPort *leftTrigger;
@@ -23,20 +23,9 @@
 @property (nonatomic, readonly) PMRPrimitiveOutputPort *dPadLeft;
 @property (nonatomic, readonly) PMRPrimitiveOutputPort *dPadUp;
 @property (nonatomic, readonly) PMRPrimitiveOutputPort *dPadDown;
-
-@property (nonatomic, readonly) PMRPrimitiveOutputPort *rightStickxPos;
-
-
-
-
-
-// left trigger
-// right trigger
-// left shoulder button
-// right shoulder button
-// A button
-// B button
-// X button
-// Y button
+@property (nonatomic, readonly) PMRPrimitiveOutputPort *leftStickXPos;
+@property (nonatomic, readonly) PMRPrimitiveOutputPort *leftStickYPos;
+@property (nonatomic, readonly) PMRPrimitiveOutputPort *rightStickXPos;
+@property (nonatomic, readonly) PMRPrimitiveOutputPort *rightStickYPos;
 
 @end

@@ -1,80 +1,92 @@
 //
-//  AppDelegate.m
-//  GamePadControllerViewer
+//  GamePadControllerPatch.m
+//  GamePadController
 //
 //  Created by Jonathan Hammond on 19/09/2016.
 //  Copyright © 2016 Just Add Music Media. All rights reserved.
 //
 
-#import "AppDelegate.h"
-#import <Performer/PMDocumentConnectionManager.h>
-#import <Performer/PMDocumentCacheManager.h>
-#import <Performer/PMDocumentPresentationCoordinator.h>
-#import "ConnectViewController.h"
+#import "GamePadControllerPatch.h"
+@import GameController;
 
-@interface AppDelegate ()
+@implementation GamePadControllerPatch {
+    GCController *_mainController;
+}
 
-@property (strong, nonatomic) PMDocumentConnectionManager *connectionManager;
-@property (strong, nonatomic) PMDocumentCacheManager *documentManager;
-@property (strong, nonatomic) PMDocumentPresentationCoordinator *presentationCoordinator;
-
-@end
-
-@implementation AppDelegate
-
-
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-
-    // presentation coordinator manages showing form documents
-    _presentationCoordinator = [[PMDocumentPresentationCoordinator alloc] initWithWindow:self.window];
-
-    _documentManager = [[PMDocumentCacheManager alloc] init];
-
-    // assemble the main UI layout
-    self.window.rootViewController = [[ConnectViewController alloc] init];
-    self.window.backgroundColor = [UIColor whiteColor];
-    [self.window makeKeyAndVisible];
-
-    application.idleTimerDisabled = YES;
-
-    // start the server to handle inbound connections now that the app is ready
-    _connectionManager = [[PMDocumentConnectionManager alloc] initWithPresentationCoordinator:_presentationCoordinator
-                                                                                 cacheManager:_documentManager];
-    [_connectionManager restartServer];
+- (BOOL)isConsumerPatch {
     return YES;
 }
 
-
-- (void)applicationWillResignActive:(UIApplication *)application {
-    // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
-    // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
+- (void)processPatchWithContext:(PMRProcessContext *)context {
+    [UIApplication sharedApplication].idleTimerDisabled = YES;
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(controllerWasConnected:) name:GCControllerDidConnectNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(controllerWasDisconnected:) name:GCControllerDidDisconnectNotification object:nil];
 }
 
-
-- (void)applicationDidEnterBackground:(UIApplication *)application {
-    // Close document and connection cleanly
-    if (_presentationCoordinator.viewState == PMDocumentViewStatePresenting) {
-        [_presentationCoordinator closeDocumentWithAnimation:NO handler:nil];
-    }
-
-    [_connectionManager shutdownServer];
+- (void)controllerWasConnected:(NSNotification *)notification {
+    _connected.booleanValue = YES;
+    _mainController = (GCController *)notification.object;
+    [self setValueChangeHandler];
 }
 
-
-- (void)applicationWillEnterForeground:(UIApplication *)application {
-    [_connectionManager restartServer];
+- (void)controllerWasDisconnected:(NSNotification *)notification {
+    _connected.booleanValue = NO;
+    _mainController = nil;
 }
 
-
-- (void)applicationDidBecomeActive:(UIApplication *)application {
-    // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+- (void)setValueChangeHandler {
+    _mainController.extendedGamepad.valueChangedHandler = ^(GCExtendedGamepad *gamepad, GCControllerElement *element) {
+        // left trigger
+        if (gamepad.leftTrigger == element) {
+            _leftTrigger.numberValue = gamepad.leftTrigger.value;
+        }
+        // right trigger
+        else if (gamepad.rightTrigger == element) {
+            _rightTrigger.numberValue = gamepad.rightTrigger.value;
+        }
+        // left shoulder button
+        else if (gamepad.leftShoulder == element) {
+            _leftShoulderButton.numberValue = gamepad.leftShoulder.value;
+        }
+        // right shoulder button
+        else if (gamepad.rightShoulder == element) {
+            _rightShoulderButton.numberValue = gamepad.rightShoulder.value;
+        }
+        // A button
+        else if (gamepad.buttonA == element) {
+            _aButton.booleanValue = gamepad.buttonA.isPressed;
+        }
+        // B button
+        else if (gamepad.buttonB == element) {
+            _bButton.booleanValue = gamepad.buttonB.isPressed;
+        }
+        // X button
+        else if (gamepad.buttonX == element) {
+            _xButton.booleanValue = gamepad.buttonX.isPressed;
+        }
+        // Y button
+        else if (gamepad.buttonY == element) {
+            _yButton.booleanValue = gamepad.buttonY.isPressed;
+        }
+        // d-pad
+        else if (gamepad.dpad == element) {
+            _dPadUp.booleanValue = gamepad.dpad.up.isPressed;
+            _dPadDown.booleanValue = gamepad.dpad.down.isPressed;
+            _dPadLeft.booleanValue = gamepad.dpad.left.isPressed;
+            _dPadRight.booleanValue = gamepad.dpad.right.isPressed;
+        }
+        // left stick
+        else if (gamepad.leftThumbstick == element) {
+            _leftStickXPos.numberValue = gamepad.leftThumbstick.xAxis.value;
+            _leftStickYPos.numberValue = gamepad.leftThumbstick.yAxis.value;
+        }
+        // right stick
+        else if (gamepad.rightThumbstick == element) {
+            _rightStickXPos.numberValue = gamepad.rightThumbstick.xAxis.value;
+            _rightStickYPos.numberValue = gamepad.rightThumbstick.yAxis.value;
+        }
+    };
 }
-
-
-- (void)applicationWillTerminate:(UIApplication *)application {
-    // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
-}
-
 
 @end
